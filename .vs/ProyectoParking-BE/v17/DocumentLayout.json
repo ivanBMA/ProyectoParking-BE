@@ -46,8 +46,7 @@
               "RelativeToolTip": "ProyectoParking-BE\\Properties\\launchSettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-09T12:44:49.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-09T12:44:49.421Z"
             },
             {
               "$type": "Document",
@@ -57,7 +56,7 @@
               "RelativeDocumentMoniker": "ProyectoParking-BE\\Controllers\\CarsController.cs",
               "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Controllers\\CarsController.cs",
               "RelativeToolTip": "ProyectoParking-BE\\Controllers\\CarsController.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAADwvzoAAAAeAAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAADwvzwAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-09T11:56:15.124Z",
               "EditorCaption": ""
@@ -72,8 +71,7 @@
               "RelativeToolTip": "ProyectoParking-BE\\Car.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T11:54:00.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-09T11:54:00.406Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "ProyectoParking-BE\\WeatherForecast.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T11:39:53.625Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-09T11:39:53.625Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "ProyectoParking-BE\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T11:26:36.671Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-09T11:26:36.671Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "ProyectoParking-BE\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T11:23:33.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-09T11:23:33.437Z"
             }
           ]
         }
