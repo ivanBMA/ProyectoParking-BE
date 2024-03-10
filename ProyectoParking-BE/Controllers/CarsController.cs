@@ -1,4 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProyectoParkingServices;
+using ProyectoParkingServices.Dto;
+using ProyectoParkingServices.Services;
+
 
 namespace ProyectoParking_BE.Controllers
 {
@@ -6,34 +10,28 @@ namespace ProyectoParking_BE.Controllers
     [ApiController]
     public class CarsController : ControllerBase
     {
-        public CarsController()
+        private readonly ICarService _carService;
+        public CarsController(ICarService carService)
         {
-
+            _carService = carService;
         }
 
         [HttpGet("getById")]
         public ActionResult<Car> GetById(int id)
         {
-            var coches = AllCarsGet();
-            var coche = coches.Where(c => c.Id == id).FirstOrDefault();
-
-
-            return Ok(coche);
+            return Ok(_carService.GetCar(id));
         }
 
         [HttpGet("getAllCars")]
         public ActionResult<List<Car>> Index()
         {
-            return Ok(AllCarsGet());
+            return Ok(_carService.GetCars());
         }
 
         [HttpPost("postAddCar")]
-        public ActionResult<List<Car>> PostAddCar([FromBody]Car car)
+        public ActionResult<CarDto> PostAddCar([FromBody] CarDto car)
         {
-            var coches = AllCarsGet();
-            coches.Add(car);
-
-            return Ok(coches);
+            return Ok(_carService.StoreCar(car));
         }
 
         [HttpPut("putCar")]
@@ -51,16 +49,11 @@ namespace ProyectoParking_BE.Controllers
         [HttpDelete("deleteById")]
         public ActionResult<List<Car>> DeleteById(int id)
         {
-            var coches = AllCarsGet();
-            var coche = coches.Where(c => c.Id == id).FirstOrDefault();
-
-            coches.Remove(coche);
-
-            return Ok(coches);
+            return Ok(_carService.DeleteCar(id));
         }
 
         
-        //hola
+        
         private List<Car> AllCarsGet()
         {
 

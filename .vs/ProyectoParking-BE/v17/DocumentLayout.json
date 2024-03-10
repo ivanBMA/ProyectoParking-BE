@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparking-be\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|solutionrelative:proyectoparking-be\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparkingservices\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|solutionrelative:proyectoparkingservices\\services\\carservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparking-be\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|solutionrelative:proyectoparking-be\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparkingservices\\services\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|solutionrelative:proyectoparkingservices\\services\\icarservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparkingservices\\dto\\cardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|solutionrelative:proyectoparkingservices\\dto\\cardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparking-be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|solutionrelative:proyectoparking-be\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparking-be\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|solutionrelative:proyectoparking-be\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparking-be\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|solutionrelative:proyectoparking-be\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparking-be\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|solutionrelative:proyectoparking-be\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparking-be\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|solutionrelative:proyectoparking-be\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,80 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "ProyectoParking-BE\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Properties\\launchSettings.json",
-              "RelativeToolTip": "ProyectoParking-BE\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-09T12:44:49.421Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CarsController.cs",
-              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Controllers\\CarsController.cs",
-              "RelativeDocumentMoniker": "ProyectoParking-BE\\Controllers\\CarsController.cs",
-              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Controllers\\CarsController.cs",
-              "RelativeToolTip": "ProyectoParking-BE\\Controllers\\CarsController.cs",
-              "ViewState": "AQIAACsAAAAAAAAAAADwvzwAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T11:56:15.124Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Car.cs",
-              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Car.cs",
-              "RelativeDocumentMoniker": "ProyectoParking-BE\\Car.cs",
-              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Car.cs",
-              "RelativeToolTip": "ProyectoParking-BE\\Car.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T11:54:00.406Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "ProyectoParking-BE\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\WeatherForecast.cs",
-              "RelativeToolTip": "ProyectoParking-BE\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T11:39:53.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "ProyectoParking-BE\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "ProyectoParking-BE\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T11:26:36.671Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Program.cs",
               "RelativeDocumentMoniker": "ProyectoParking-BE\\Program.cs",
               "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Program.cs",
               "RelativeToolTip": "ProyectoParking-BE\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-09T11:23:33.437Z"
+              "WhenOpened": "2024-03-10T12:41:22.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarDto.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Dto\\CarDto.cs",
+              "RelativeDocumentMoniker": "ProyectoParkingServices\\Dto\\CarDto.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Dto\\CarDto.cs",
+              "RelativeToolTip": "ProyectoParkingServices\\Dto\\CarDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:31:05.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CarService.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\CarService.cs",
+              "RelativeDocumentMoniker": "ProyectoParkingServices\\Services\\CarService.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\CarService.cs",
+              "RelativeToolTip": "ProyectoParkingServices\\Services\\CarService.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAiwDIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T11:42:47.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ICarService.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\ICarService.cs",
+              "RelativeDocumentMoniker": "ProyectoParkingServices\\Services\\ICarService.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\ICarService.cs",
+              "RelativeToolTip": "ProyectoParkingServices\\Services\\ICarService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAswAcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T11:54:18.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "ProyectoParking-BE\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "ProyectoParking-BE\\Controllers\\CarsController.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAASwCIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-10T12:10:50.858Z",
+              "EditorCaption": ""
             }
           ]
         }

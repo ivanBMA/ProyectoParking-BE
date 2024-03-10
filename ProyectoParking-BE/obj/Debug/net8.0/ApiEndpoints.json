@@ -15,7 +15,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[ProyectoParking_BE.Car, ProyectoParking-BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Car, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -35,7 +35,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[ProyectoParking_BE.Car, ProyectoParking-BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Car, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "ProyectoParking_BE.Car",
+        "Type": "ProyectoParkingServices.Car",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -81,13 +81,13 @@
     "Parameters": [
       {
         "Name": "car",
-        "Type": "ProyectoParking_BE.Car",
+        "Type": "ProyectoParkingServices.Dto.CarDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[ProyectoParking_BE.Car, ProyectoParking-BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "ProyectoParkingServices.Dto.CarDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -112,13 +112,13 @@
       },
       {
         "Name": "car",
-        "Type": "ProyectoParking_BE.Car",
+        "Type": "ProyectoParkingServices.Car",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[ProyectoParking_BE.Car, ProyectoParking-BE, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Car, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
