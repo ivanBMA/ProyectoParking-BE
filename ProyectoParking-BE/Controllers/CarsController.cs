@@ -35,15 +35,9 @@ namespace ProyectoParking_BE.Controllers
         }
 
         [HttpPut("putCar")]
-        public ActionResult<List<Car>> PutCar(int id, [FromBody] Car car)
+        public ActionResult<List<CarDto>> PutCar(int id, [FromBody] CarDto carDto)
         {
-            var coches = AllCarsGet();
-            var cocheAntiguo = coches.Where(c => c.Id == id).FirstOrDefault();
-
-            cocheAntiguo.Name = car.Name;
-            cocheAntiguo.Description = car.Description;
-
-            return Ok(coches);
+            return Ok(_carService.PutCar(id, carDto));
         }
 
         [HttpDelete("deleteById")]

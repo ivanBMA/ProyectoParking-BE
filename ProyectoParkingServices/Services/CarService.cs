@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using ProyectoParkingServices.Dto;
 using System;
 using System.Collections.Generic;
@@ -30,6 +31,22 @@ namespace ProyectoParkingServices.Services
         public CarDto GetCar(int id)
         {
             var car = _context.Cars.Where(c => c.Id == id).FirstOrDefault();
+
+            return _mapper.Map<CarDto>(car);
+        }
+
+        public CarDto PutCar(int id, CarDto carDto)
+        {
+            //var cocheAntiguo = _context.Cars.Where(c => c.Id == id).FirstOrDefault();
+            var cocheAntiguo = _context.Cars.AsNoTracking().FirstOrDefault(c => c.Id == id);
+
+            carDto.Id = cocheAntiguo.Id;
+            carDto.ClientId = cocheAntiguo.ClientId;
+
+            var car = _mapper.Map<Car>(carDto);
+
+            _context.Cars.Update(car);
+            _context.SaveChanges();
 
             return _mapper.Map<CarDto>(car);
         }

@@ -11,6 +11,8 @@ builder.Services.AddDbContext<ParkingContext>(options =>
 });
 
 builder.Services.AddScoped<ICarService, CarService>();
+builder.Services.AddScoped<IClientService, ClientService>();
+
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 

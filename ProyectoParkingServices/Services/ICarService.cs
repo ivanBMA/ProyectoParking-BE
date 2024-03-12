@@ -9,5 +9,6 @@ namespace ProyectoParkingServices.Services
         CarDto GetCar(int id);
         bool DeleteCar(int id);
         CarDto StoreCar(CarDto car);
+        CarDto PutCar(int id, CarDto carDto);
     }
 }
