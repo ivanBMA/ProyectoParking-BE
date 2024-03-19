@@ -12,5 +12,9 @@ namespace ProyectoParkingServices.Services
     {
         public List<Plaza> GetPlazas();
         public Plaza StorePlaza(Plaza plaza);
+        public Plaza GetPlaza(int id);
+        public bool DeleteCar(int id);
+        public Plaza PutPlaza(int id, Plaza plazaDto);
+
     }
 }

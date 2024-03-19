@@ -259,6 +259,32 @@
   },
   {
     "ContainingType": "ProyectoParking_BE.Controllers.PlazasController",
+    "Method": "DeleteById",
+    "RelativePath": "api/Plazas/deleteById",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Plaza, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoParking_BE.Controllers.PlazasController",
     "Method": "Index",
     "RelativePath": "api/Plazas/getAllPlazas",
     "HttpMethod": "GET",
@@ -268,6 +294,32 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Plaza, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoParking_BE.Controllers.PlazasController",
+    "Method": "GetById",
+    "RelativePath": "api/Plazas/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProyectoParkingServices.Plaza",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -294,6 +346,37 @@
     "ReturnTypes": [
       {
         "Type": "ProyectoParkingServices.Plaza",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoParking_BE.Controllers.PlazasController",
+    "Method": "PutPlaza",
+    "RelativePath": "api/Plazas/putPlaza",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "plaza",
+        "Type": "ProyectoParkingServices.Plaza",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Plaza, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",

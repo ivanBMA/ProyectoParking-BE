@@ -15,13 +15,7 @@ namespace ProyectoParking_BE.Controllers
         {
             _plazaService = plazaService;
         }
-        /*
-        [HttpGet("getById")]
-        public ActionResult<Plaza> GetById(int id)
-        {
-            return Ok(_plazaService.GetPlaza(id));
-        }
-        */
+        
 
         [HttpGet("getAllPlazas")]
         public ActionResult<List<Plaza>> Index()
@@ -34,5 +28,24 @@ namespace ProyectoParking_BE.Controllers
         {
             return Ok(_plazaService.StorePlaza(plaza));
         }
+
+        [HttpGet("getById")]
+        public ActionResult<Plaza> GetById(int id)
+        {
+            return Ok(_plazaService.GetPlaza(id));
+        }
+
+        [HttpPut("putPlaza")]
+        public ActionResult<List<Plaza>> PutPlaza(int id, [FromBody] Plaza plaza)
+        {
+            return Ok(_plazaService.PutPlaza(id, plaza));
+        }
+
+        [HttpDelete("deleteById")]
+        public ActionResult<List<Plaza>> DeleteById(int id)
+        {
+            return Ok(_plazaService.DeleteCar(id));
+        }
+
     }
 }
