@@ -12,5 +12,6 @@ namespace ProyectoParkingServices.Dto
         public string Name { get; set; } = null!;
         public string? Description { get; set; }
         public int ClientId { get; set; }
+        public string Matricula { get; set; } = null!;
     }
 }
