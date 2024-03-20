@@ -13,6 +13,7 @@ builder.Services.AddDbContext<ParkingContext>(options =>
 builder.Services.AddScoped<ICarService, CarService>();
 builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<IPlazasService, PlazasServices>();
+builder.Services.AddScoped<IRegistroPlazasServices, RegistroPlazasService>();
 
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());

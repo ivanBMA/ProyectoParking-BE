@@ -21,28 +21,29 @@ namespace ProyectoParkingServices.Services
             _mapper = mapper;
         }
 
-        public List<Plaza> GetPlazas()
+        public List<PlazaDto> GetPlazas()
         {
             var plazas = _context.Plazas.ToList();
 
-            return _mapper.Map<List<Plaza>>(plazas);
+            return _mapper.Map<List<PlazaDto>>(plazas);
         }
 
-        public Plaza StorePlaza(Plaza plaza)
+        public PlazaDto StorePlaza(PlazaDto plazaDto)
         {
+            var plaza = _mapper.Map<Plaza>(plazaDto);
             _context.Plazas.Add(plaza);
             _context.SaveChanges();
 
-            return _mapper.Map<Plaza>(plaza);
+            return _mapper.Map<PlazaDto>(plaza);
         }
 
-        public Plaza GetPlaza(int id)
+        public PlazaDto GetPlaza(int id)
         {
             var plaza = _context.Plazas.Where(c => c.Id == id).FirstOrDefault();
 
-            return _mapper.Map<Plaza>(plaza);
+            return _mapper.Map<PlazaDto>(plaza);
         }
-        public bool DeleteCar(int id)
+        public bool DeletePlaza(int id)
         {
             var plaza = _context.Plazas.Where(c => c.Id == id).FirstOrDefault();
 
@@ -57,17 +58,14 @@ namespace ProyectoParkingServices.Services
             return true;
         }
 
-        public Plaza PutPlaza(int id, Plaza plazaDto)
+        public PlazaDto PutPlaza(int id, PlazaDto plazaDto)
         {
             //var cocheAntiguo = _context.Cars.Where(c => c.Id == id).FirstOrDefault();
             //-> arreglar
             var plazaAntiguo = _context.Plazas.AsNoTracking().FirstOrDefault(c => c.Id == id);
 
-            if (plazaDto.Id == null)
-            {
-                plazaDto.Id = plazaAntiguo.Id;
-            }
-            
+            plazaDto.Id = id;
+
             if (plazaDto.Ocupado == null)
             {
                 plazaDto.Ocupado = plazaAntiguo.Ocupado;
@@ -79,7 +77,7 @@ namespace ProyectoParkingServices.Services
             _context.Plazas.Update(plaza);
             _context.SaveChanges();
 
-            return _mapper.Map<Plaza>(plaza);
+            return _mapper.Map<PlazaDto>(plaza);
         }
 
     }

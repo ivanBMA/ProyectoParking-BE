@@ -273,7 +273,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Plaza, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Dto.PlazaDto, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -293,7 +293,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Plaza, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Dto.PlazaDto, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -319,7 +319,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "ProyectoParkingServices.Plaza",
+        "Type": "ProyectoParkingServices.Dto.PlazaDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -338,14 +338,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "plaza",
-        "Type": "ProyectoParkingServices.Plaza",
+        "Name": "plazaDto",
+        "Type": "ProyectoParkingServices.Dto.PlazaDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "ProyectoParkingServices.Plaza",
+        "Type": "ProyectoParkingServices.Dto.PlazaDto",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -369,14 +369,60 @@
         "IsRequired": false
       },
       {
-        "Name": "plaza",
-        "Type": "ProyectoParkingServices.Plaza",
+        "Name": "plazaDto",
+        "Type": "ProyectoParkingServices.Dto.PlazaDto",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Plaza, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Dto.PlazaDto, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoParking_BE.Controllers.RegistroPlazasController",
+    "Method": "Index",
+    "RelativePath": "api/RegistroPlazas/getAllRegistroPlazas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Dto.RegistroPlazasDto, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoParking_BE.Controllers.RegistroPlazasController",
+    "Method": "PostAddCar",
+    "RelativePath": "api/RegistroPlazas/postAddPlaza",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registroDto",
+        "Type": "ProyectoParkingServices.Dto.RegistroPlazasDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProyectoParkingServices.Dto.RegistroPlazasDto",
         "MediaTypes": [
           "text/plain",
           "application/json",

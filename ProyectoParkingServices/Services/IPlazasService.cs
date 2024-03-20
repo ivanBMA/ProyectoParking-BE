@@ -10,11 +10,11 @@ namespace ProyectoParkingServices.Services
 {
     public interface IPlazasService
     {
-        public List<Plaza> GetPlazas();
-        public Plaza StorePlaza(Plaza plaza);
-        public Plaza GetPlaza(int id);
-        public bool DeleteCar(int id);
-        public Plaza PutPlaza(int id, Plaza plazaDto);
+        public List<PlazaDto> GetPlazas();
+        public PlazaDto StorePlaza(PlazaDto plaza);
+        public PlazaDto GetPlaza(int id);
+        public bool DeletePlaza(int id);
+        public PlazaDto PutPlaza(int id, PlazaDto plazaDto);
 
     }
 }

@@ -18,33 +18,33 @@ namespace ProyectoParking_BE.Controllers
         
 
         [HttpGet("getAllPlazas")]
-        public ActionResult<List<Plaza>> Index()
+        public ActionResult<List<PlazaDto>> Index()
         {
             return Ok(_plazaService.GetPlazas());
         }
 
         [HttpPost("postAddPlaza")]
-        public ActionResult<Plaza> PostAddCar([FromBody] Plaza plaza)
+        public ActionResult<PlazaDto> PostAddCar([FromBody] PlazaDto plazaDto)
         {
-            return Ok(_plazaService.StorePlaza(plaza));
+            return Ok(_plazaService.StorePlaza(plazaDto));
         }
 
         [HttpGet("getById")]
-        public ActionResult<Plaza> GetById(int id)
+        public ActionResult<PlazaDto> GetById(int id)
         {
             return Ok(_plazaService.GetPlaza(id));
         }
 
         [HttpPut("putPlaza")]
-        public ActionResult<List<Plaza>> PutPlaza(int id, [FromBody] Plaza plaza)
+        public ActionResult<List<PlazaDto>> PutPlaza(int id, [FromBody] PlazaDto plazaDto)
         {
-            return Ok(_plazaService.PutPlaza(id, plaza));
+            return Ok(_plazaService.PutPlaza(id, plazaDto));
         }
 
         [HttpDelete("deleteById")]
-        public ActionResult<List<Plaza>> DeleteById(int id)
+        public ActionResult<List<PlazaDto>> DeleteById(int id)
         {
-            return Ok(_plazaService.DeleteCar(id));
+            return Ok(_plazaService.DeletePlaza(id));
         }
 
     }
