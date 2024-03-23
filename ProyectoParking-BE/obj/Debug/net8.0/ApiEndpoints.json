@@ -387,9 +387,35 @@
     ]
   },
   {
-    "ContainingType": "ProyectoParking_BE.Controllers.RegistroPlazasController",
+    "ContainingType": "ProyectoParking_BE.Controllers.RegistroPlazaController",
+    "Method": "DeleteById",
+    "RelativePath": "api/RegistroPlaza/deleteById",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Dto.RegistroPlazasDto, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoParking_BE.Controllers.RegistroPlazaController",
     "Method": "Index",
-    "RelativePath": "api/RegistroPlazas/getAllRegistroPlazas",
+    "RelativePath": "api/RegistroPlaza/getAllRegistroPlazas",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -407,9 +433,35 @@
     ]
   },
   {
-    "ContainingType": "ProyectoParking_BE.Controllers.RegistroPlazasController",
-    "Method": "PostAddCar",
-    "RelativePath": "api/RegistroPlazas/postAddPlaza",
+    "ContainingType": "ProyectoParking_BE.Controllers.RegistroPlazaController",
+    "Method": "GetById",
+    "RelativePath": "api/RegistroPlaza/getById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "ProyectoParkingServices.Dto.RegistroPlazasDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ProyectoParking_BE.Controllers.RegistroPlazaController",
+    "Method": "PostAddPlaza",
+    "RelativePath": "api/RegistroPlaza/postAddPlaza",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

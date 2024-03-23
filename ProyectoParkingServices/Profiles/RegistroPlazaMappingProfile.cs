@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using ProyectoParkingServices.Dto;
+using ProyectoParkingServices.Profiles;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace ProyectoParkingServices.Profiles
 {
-    public class RegistroPlazasMappingProfile : Profile
+    public class RegistroPlazaMappingProfile : Profile
     {
-        public RegistroPlazasMappingProfile()
+        public RegistroPlazaMappingProfile()
         {
             CreateMap<RegistroPlaza, RegistroPlazasDto>().ReverseMap();
         }

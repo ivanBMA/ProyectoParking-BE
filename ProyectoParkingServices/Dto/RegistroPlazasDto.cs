@@ -11,9 +11,7 @@ namespace ProyectoParkingServices.Dto
         public int Id { get; set; }
         public int Id_Plaza { get; set; }
         public int Id_Coche { get; set; }
-        public TimeOnly horaEntrada { get; set; }
-        public TimeOnly horaSalida { get; set; }
-        public DateOnly fecha { get; set; }
-        public double precio { get; set; }
+        public Boolean tipoEvento { get; set; }
+        public DateTime fechaEvento { get; set; }
     }
 }
