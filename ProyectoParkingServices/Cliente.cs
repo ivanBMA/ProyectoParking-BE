@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ProyectoParkingServices;
 
-public partial class Client
+public partial class Cliente
 {
     public int Id { get; set; }
 
@@ -11,5 +11,5 @@ public partial class Client
 
     public string? Nif { get; set; }
 
-    public virtual ICollection<Car> Cars { get; set; } = new List<Car>();
+    public virtual ICollection<Coche> Cars { get; set; } = new List<Coche>();
 }

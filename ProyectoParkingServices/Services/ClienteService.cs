@@ -9,37 +9,37 @@ using System.Threading.Tasks;
 
 namespace ProyectoParkingServices.Services
 {
-    public class ClientService : IClientService
+    public class ClienteService : IClienteService
     {
         private readonly ParkingContext _context;
         private readonly IMapper _mapper;
-        public ClientService(ParkingContext context, IMapper mapper)
+        public ClienteService(ParkingContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
         }
 
-        public List<Client> GetClients()
+        public List<Cliente> GetClients()
         {
             var clients = _context.Clients.ToList();
 
-            return _mapper.Map<List<Client>>(clients);
+            return _mapper.Map<List<Cliente>>(clients);
         }
 
-        public Client GetClient(int id)
+        public Cliente GetClient(int id)
         {
             var client = _context.Clients.Where(c => c.Id == id).FirstOrDefault();
 
-            return _mapper.Map<Client>(client);
+            return _mapper.Map<Cliente>(client);
         }
 
-        public ClientDto StoreClient(ClientDto client)
+        public ClienteDto StoreClient(ClienteDto client)
         {
-            var cliente = _mapper.Map<Client>(client);
+            var cliente = _mapper.Map<Cliente>(client);
             _context.Clients.Add(cliente);
             _context.SaveChanges();
 
-            return _mapper.Map<ClientDto>(cliente);
+            return _mapper.Map<ClienteDto>(cliente);
         }
 
         public bool DeleteClient(int id)
@@ -51,7 +51,7 @@ namespace ProyectoParkingServices.Services
             return true;
         }
 
-        public ClientDto PutClient(int id, ClientDto clientDto)
+        public ClienteDto PutClient(int id, ClienteDto clientDto)
         {
             //var cocheAntiguo = _context.Cars.Where(c => c.Id == id).FirstOrDefault();
             var clientAntiguo = _context.Clients.AsNoTracking().FirstOrDefault(c => c.Id == id);
@@ -66,12 +66,12 @@ namespace ProyectoParkingServices.Services
                 clientDto.Nif = clientAntiguo.Nif;
             }
 
-            var client = _mapper.Map<Client>(clientDto);
+            var client = _mapper.Map<Cliente>(clientDto);
 
             _context.Clients.Update(client);
             _context.SaveChanges();
 
-            return _mapper.Map<ClientDto>(client);
+            return _mapper.Map<ClienteDto>(client);
         }
     }
 }

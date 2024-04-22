@@ -15,11 +15,16 @@ public partial class ParkingContext : DbContext
     {
     }
 
-    public virtual DbSet<Car> Cars { get; set; }
-
-    public virtual DbSet<Client> Clients { get; set; }
+    public virtual DbSet<Coche> Cars { get; set; }
+    public virtual DbSet<Cliente> Clients { get; set; }
+    public virtual DbSet<DistribucionPlaza> DistribucionPlazas { get; set; }
+    public virtual DbSet<Factura> Facturas { get; set; }
     public virtual DbSet<Plaza> Plazas { get; set; }
     public virtual DbSet<RegistroPlaza> RegistroPlazas { get; set; }
+    public virtual DbSet<Precios> Precios { get; set; }
+    public virtual DbSet<Parking> Parkings { get; set; }
+
+
 
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -28,7 +33,7 @@ public partial class ParkingContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Car>(entity =>
+        modelBuilder.Entity<Coche>(entity =>
         {
             entity.Property(e => e.Description)
                 .HasMaxLength(150)
@@ -43,7 +48,7 @@ public partial class ParkingContext : DbContext
                 .HasConstraintName("FK_Cars_Clients");
         });
 
-        modelBuilder.Entity<Client>(entity =>
+        modelBuilder.Entity<Cliente>(entity =>
         {
             entity.Property(e => e.Name)
                 .HasMaxLength(50)

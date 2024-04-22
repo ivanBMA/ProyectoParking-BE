@@ -8,12 +8,14 @@ using System.Threading.Tasks;
 
 namespace ProyectoParkingServices.Profiles
 {
-    public class ClientMappingProfile : Profile
+    public class DistribucionPlazaMappingProfile : Profile
     {
-        public ClientMappingProfile()
+
+        public DistribucionPlazaMappingProfile()
         {
-            CreateMap<ClientDto, Client>()
-                .ReverseMap();
+            CreateMap<DistribucionPlazaDto, DistribucionPlaza>().ReverseMap();
         }
+
     }
 }
+

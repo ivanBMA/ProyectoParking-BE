@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProyectoParkingServices.Dto
 {
-    public class CarDto
+    public class CocheDto
     {
         public int Id { get; set; }
         public string Name { get; set; } = null!;

@@ -10,9 +10,13 @@ builder.Services.AddDbContext<ParkingContext>(options =>
     options.UseSqlServer("Data Source=ws16;Initial Catalog=Parking;User ID=emoros;password=Inicam10.;TrustServerCertificate=True");
 });
 
-builder.Services.AddScoped<ICarService, CarService>();
-builder.Services.AddScoped<IClientService, ClientService>();
+builder.Services.AddScoped<ICocheService, CocheService>();
+builder.Services.AddScoped<IFacturaService, FacturaService>();
+builder.Services.AddScoped<IClienteService, ClienteService>();
+builder.Services.AddScoped<IDistribucionPlazaService, DistribucionPlazasService>();
+builder.Services.AddScoped<IParkingsService, ParkingsService>();
 builder.Services.AddScoped<IPlazasService, PlazasServices>();
+builder.Services.AddScoped<IPreciosService, PrecioService>();
 builder.Services.AddScoped<IRegistroPlazaService, RegistroPlazaService>();
 
 

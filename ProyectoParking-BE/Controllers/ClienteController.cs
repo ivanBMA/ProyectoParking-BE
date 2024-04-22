@@ -7,40 +7,40 @@ namespace ProyectoParking_BE.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ClientController : ControllerBase
+    public class ClienteController : ControllerBase
     {
-        private readonly IClientService _clientService;
-        public ClientController(IClientService clientService)
+        private readonly IClienteService _clientService;
+        public ClienteController(IClienteService clientService)
         {
             _clientService = clientService;
         }
 
         [HttpGet("getAllClients")]
-        public ActionResult<List<Client>> Index()
+        public ActionResult<List<Cliente>> Index()
         {
             return Ok(_clientService.GetClients());
         }
 
         [HttpGet("getById")]
-        public ActionResult<Client> GetById(int id)
+        public ActionResult<Cliente> GetById(int id)
         {
             return Ok(_clientService.GetClient(id));
         }
 
         [HttpPost("postAddClient")]
-        public ActionResult<ClientDto> PostAddClient([FromBody] ClientDto client)
+        public ActionResult<ClienteDto> PostAddClient([FromBody] ClienteDto client)
         {
             return Ok(_clientService.StoreClient(client));
         }
 
         [HttpPut("putClient")]
-        public ActionResult<List<ClientDto>> PutClient(int id, [FromBody] ClientDto clientDto)
+        public ActionResult<List<ClienteDto>> PutClient(int id, [FromBody] ClienteDto clientDto)
         {
             return Ok(_clientService.PutClient(id, clientDto));
         }
 
         [HttpDelete("deleteById")]
-        public ActionResult<List<Client>> DeleteById(int id)
+        public ActionResult<List<Cliente>> DeleteById(int id)
         {
             return Ok(_clientService.DeleteClient(id));
         }

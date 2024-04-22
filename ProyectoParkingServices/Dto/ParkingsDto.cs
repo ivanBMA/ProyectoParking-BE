@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProyectoParkingServices.Dto
 {
-    public class ClientDto
+    public class ParkingsDto
     {
-        public int Id { get; set; }
-
-        public string Name { get; set; } = null!;
-
-        public string? Nif { get; set; }
-
+        public Int16 Id { get; set; }
+        public string Nombre { get; set; }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ProyectoParkingServices;
 
-public partial class Car
+public partial class Coche
 {
     public int Id { get; set; }
 
@@ -14,5 +14,5 @@ public partial class Car
     public int ClientId { get; set; }
     public string Matricula { get; set; } = null!;
 
-    public virtual Client Client { get; set; } = null!;
+    public virtual Cliente Client { get; set; } = null!;
 }

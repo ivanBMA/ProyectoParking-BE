@@ -8,64 +8,64 @@ namespace ProyectoParking_BE.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CarsController : ControllerBase
+    public class CocheController : ControllerBase
     {
-        private readonly ICarService _carService;
-        public CarsController(ICarService carService)
+        private readonly ICocheService _carService;
+        public CocheController(ICocheService carService)
         {
             _carService = carService;
         }
 
         [HttpGet("getById")]
-        public ActionResult<Car> GetById(int id)
+        public ActionResult<Coche> GetById(int id)
         {
             return Ok(_carService.GetCar(id));
         }
 
         [HttpGet("getAllCars")]
-        public ActionResult<List<Car>> Index()
+        public ActionResult<List<Coche>> Index()
         {
             return Ok(_carService.GetCars());
         }
 
         [HttpPost("postAddCar")]
-        public ActionResult<CarDto> PostAddCar([FromBody] CarDto car)
+        public ActionResult<CocheDto> PostAddCar([FromBody] CocheDto car)
         {
             return Ok(_carService.StoreCar(car));
         }
 
         [HttpPut("putCar")]
-        public ActionResult<List<CarDto>> PutCar(int id, [FromBody] CarDto carDto)
+        public ActionResult<List<CocheDto>> PutCar(int id, [FromBody] CocheDto carDto)
         {
             return Ok(_carService.PutCar(id, carDto));
         }
 
         [HttpDelete("deleteById")]
-        public ActionResult<List<Car>> DeleteById(int id)
+        public ActionResult<List<Coche>> DeleteById(int id)
         {
             return Ok(_carService.DeleteCar(id));
         }
 
         
         
-        private List<Car> AllCarsGet()
+        private List<Coche> AllCarsGet()
         {
 
-            Car car = new Car()
+            Coche car = new Coche()
             {
                 Id = 1,
                 Name = "Foo",
                 Description = "Bar",
             };
 
-            Car car2 = new Car()
+            Coche car2 = new Coche()
             {
                 Id = 2,
                 Name = "Faa",
                 Description = "rapido",
             };
 
-            List<Car> results = new List<Car>();
+            List<Coche> results = new List<Coche>();
             results.Add(car);
             results.Add(car2);
 

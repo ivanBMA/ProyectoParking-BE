@@ -11,31 +11,31 @@ using System.Threading.Tasks;
 
 namespace ProyectoParkingServices.Services
 {
-    public class CarService : ICarService
+    public class CocheService : ICocheService
     {
         private readonly ParkingContext _context;
         private readonly IMapper _mapper;
-        public CarService(ParkingContext context, IMapper mapper)
+        public CocheService(ParkingContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;
         }
 
-        public List<CarDto> GetCars()
+        public List<CocheDto> GetCars()
         {
             var cars = _context.Cars.ToList();
 
-            return _mapper.Map<List<CarDto>>(cars);
+            return _mapper.Map<List<CocheDto>>(cars);
         }
 
-        public CarDto GetCar(int id)
+        public CocheDto GetCar(int id)
         {
             var car = _context.Cars.Where(c => c.Id == id).FirstOrDefault();
 
-            return _mapper.Map<CarDto>(car);
+            return _mapper.Map<CocheDto>(car);
         }
 
-        public CarDto PutCar(int id, CarDto carDto)
+        public CocheDto PutCar(int id, CocheDto carDto)
         {
             //var cocheAntiguo = _context.Cars.Where(c => c.Id == id).FirstOrDefault();
             var cocheAntiguo = _context.Cars.AsNoTracking().FirstOrDefault(c => c.Id == id);
@@ -43,21 +43,21 @@ namespace ProyectoParkingServices.Services
             carDto.Id = cocheAntiguo.Id;
             carDto.ClientId = cocheAntiguo.ClientId;
 
-            var car = _mapper.Map<Car>(carDto);
+            var car = _mapper.Map<Coche>(carDto);
 
             _context.Cars.Update(car);
             _context.SaveChanges();
 
-            return _mapper.Map<CarDto>(car);
+            return _mapper.Map<CocheDto>(car);
         }
 
-        public CarDto StoreCar(CarDto carDto)
+        public CocheDto StoreCar(CocheDto carDto)
         {
-            var car = _mapper.Map<Car>(carDto);
+            var car = _mapper.Map<Coche>(carDto);
             _context.Cars.Add(car);
             _context.SaveChanges();
              
-            return _mapper.Map<CarDto>(car);
+            return _mapper.Map<CocheDto>(car);
         }
 
         public bool DeleteCar(int id)

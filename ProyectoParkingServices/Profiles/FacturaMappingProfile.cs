@@ -3,11 +3,11 @@ using ProyectoParkingServices.Dto;
 
 namespace ProyectoParkingServices.Profiles
 {
-    public class CarMappingProfile : Profile
+    public class FacturaMappingProfile : Profile
     {
-        public CarMappingProfile()
+        public FacturaMappingProfile()
         {
-            CreateMap<CarDto, Car>()
+            CreateMap<FacturaDto, Factura>()
                 .ReverseMap();
         }
     }
