@@ -14,6 +14,7 @@ namespace ProyectoParkingServices.Services
         bool DeleteDistribucionPlaza(int id);
         DistribucionPlazaDto StoreDistribucionPlaza(DistribucionPlazaDto distribucionPlaza);
         DistribucionPlazaDto PutDistribucionPlaza(int id, DistribucionPlazaDto distribucionPlazaDto);
+        public bool rellenarDistribucion(Int16 Id_Parking);
 
     }
 }

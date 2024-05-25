@@ -138,3 +138,4 @@ C:\Users\ivan\source\repos\ProyectoParking-BE\ProyectoParking-BE\bin\Debug\net8.
 C:\Users\ivan\source\repos\ProyectoParking-BE\ProyectoParking-BE\bin\Debug\net8.0\ProyectoParkingServices.dll
 C:\Users\ivan\source\repos\ProyectoParking-BE\ProyectoParking-BE\bin\Debug\net8.0\ProyectoParkingServices.pdb
 C:\Users\ivan\source\repos\ProyectoParking-BE\ProyectoParking-BE\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\ivan\source\repos\ProyectoParking-BE\ProyectoParking-BE\bin\Debug\net8.0\Newtonsoft.Json.dll

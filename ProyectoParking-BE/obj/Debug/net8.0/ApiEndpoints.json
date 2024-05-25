@@ -387,6 +387,32 @@
     ]
   },
   {
+    "ContainingType": "ProyectoParking_BE.Controllers.DistribucionPlazasController",
+    "Method": "rellenarTabla",
+    "RelativePath": "api/DistribucionPlazas/rellenarTabla",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id_Parking",
+        "Type": "System.Int16",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Dto.DistribucionPlazaDto, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "ProyectoParking_BE.Controllers.FacturaController",
     "Method": "DeleteById",
     "RelativePath": "api/Factura/deleteById",

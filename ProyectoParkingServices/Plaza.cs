@@ -11,8 +11,8 @@ namespace ProyectoParkingServices
         public int Id { get; set; }
         //La base de datos es 0 o 1 no true o false por que no existe boolean
         public bool Ocupado { get; set; }
-        public int Id_Parking { get; set; }
-        public int Id_Distribucion { get; set; }
+        public Int16 Id_Parking { get; set; }
+        public Int16 Id_Distribucion { get; set; }
 
     }
 }

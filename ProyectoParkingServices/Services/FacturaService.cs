@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProyectoParkingServices.Services
 {
@@ -19,22 +20,34 @@ namespace ProyectoParkingServices.Services
             _mapper = mapper;
         }
 
-        private decimal calcularImporte(Factura factura)
+        private decimal cojerPrecio(Factura factura)
         {
             int tiempo = factura.Tiempo;
             int id = factura.Id_Precio;
             Precios precio = _context.Precios.Where(c => c.Id == id).FirstOrDefault();
             Decimal importe = precio.Precio;
 
-
             return importe;
         }
         private int calcularTiempo(Factura factura)
         {
-            int tiempo = 0;
+            RegistroPlaza entrada = _context.RegistroPlazas.Where(c => c.Id_Coche == factura.Id_Coche && c.tipoEvento == true).FirstOrDefault();
+            RegistroPlaza salida = _context.RegistroPlazas.Where(c => c.Id_Coche == factura.Id_Coche && c.tipoEvento == false).FirstOrDefault();
+            System.TimeSpan date4 = salida.fechaEvento - entrada.fechaEvento;
+            double minutos = date4.TotalMinutes;
+            int minutosInt = Convert.ToInt32(minutos);
 
+            return minutosInt;
+        }
 
-            return tiempo;
+        private int cojerIdCliente(Factura facturae)
+        {
+            return _context.Cars.Where(c => c.ClientId == facturae.Id_Coche).FirstOrDefault().Id;
+        }
+
+        private decimal calcularImporte(Factura facturae)
+        {
+            return facturae.Precio * facturae.Tiempo;
         }
 
         public List<FacturaDto> GetFacturas()
@@ -56,7 +69,11 @@ namespace ProyectoParkingServices.Services
             var facturae = _mapper.Map<Factura>(factura);
 
             facturae.Tiempo = calcularTiempo(facturae);
-            facturae.Precio = calcularImporte(facturae);
+            facturae.Precio = cojerPrecio(facturae);
+            facturae.Id_Cliente = cojerIdCliente(facturae);
+            facturae.Importe = calcularImporte(facturae);
+
+
 
             _context.Facturas.Add(facturae);
             _context.SaveChanges();

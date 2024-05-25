@@ -47,5 +47,11 @@ namespace ProyectoParking_BE.Controllers
             return Ok(_distribucionPlazaService.DeleteDistribucionPlaza(id));
         }
 
+        [HttpPost("rellenarTabla")]
+        public ActionResult<List<DistribucionPlazaDto>> rellenarTabla(Int16 Id_Parking)
+        {
+            return Ok(_distribucionPlazaService.rellenarDistribucion(Id_Parking));
+        }
+
     }
 }
