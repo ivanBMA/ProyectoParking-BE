@@ -389,17 +389,11 @@
   {
     "ContainingType": "ProyectoParking_BE.Controllers.DistribucionPlazasController",
     "Method": "rellenarTabla",
-    "RelativePath": "api/DistribucionPlazas/rellenarTabla",
+    "RelativePath": "api/DistribucionPlazas/rellenarDistribucion",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id_Parking",
-        "Type": "System.Int16",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[ProyectoParkingServices.Dto.DistribucionPlazaDto, ProyectoParkingServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",

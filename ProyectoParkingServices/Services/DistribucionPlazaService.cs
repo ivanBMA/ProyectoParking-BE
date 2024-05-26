@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using Newtonsoft.Json;
+using Microsoft.Data.SqlClient;
 
 namespace ProyectoParkingServices.Services
 {
@@ -18,42 +19,40 @@ namespace ProyectoParkingServices.Services
 
         private Boolean leerFichero(Int16 Id_Parking)
         {
-            StreamReader reader = new StreamReader("C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\DistribucionA.json");
-            string jsonString = reader.ReadToEnd();
-            Archivo matrizDatos = JsonConvert.DeserializeObject<Archivo>(jsonString);
-            Int16 contador = 1;
-            //Borrar la tabla antes de volvar los datos
-            foreach (bool[] fila in matrizDatos.Matriz)
+            using (StreamReader reader = new StreamReader("C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\DistribucionA.json"))
             {
-                Int16 contadorA = 0;
-                foreach (bool valor in fila)
+                string jsonString = reader.ReadToEnd();
+                Archivo matrizDatos = JsonConvert.DeserializeObject<Archivo>(jsonString);
+                Int16 contador = 1;
+
+                // Borrar la tabla antes de volcar los datos
+                // Código para borrar la tabla si es necesario
+
+                for (int contadorA = 0; contadorA < matrizDatos.Matriz.Length; contadorA++)
                 {
-                    Int16 contadorB = 0;
-
-                    Int16 Fila = contadorB;
-                    Int16 Columna = contadorA;
-                    bool EsPlaza = matrizDatos.Matriz[contadorA][contadorB];
-                    contador++;
-                    DistribucionPlaza distribucionPlaza = new DistribucionPlaza
+                    for (int contadorB = 0; contadorB < matrizDatos.Matriz[contadorA].Length; contadorB++)
                     {
-                        
-                        Id = contador,
-                        Fila = Fila,
-                        Columna = Columna,
-                        EsPlaza = EsPlaza,
-                        Id_Parking = Id_Parking
-                    };
+                        Int16 Fila = (Int16)contadorA;
+                        Int16 Columna = (Int16)contadorB;
+                        bool EsPlaza = matrizDatos.Matriz[contadorA][contadorB];
 
-                    StoreDistribucionPlaza(distribucionPlaza);
+                        DistribucionPlaza distribucionPlaza = new DistribucionPlaza
+                        {
+                            //Id = contador,
+                            Fila = Fila,
+                            Columna = Columna,
+                            EsPlaza = EsPlaza,
+                            Id_Parking = Id_Parking
+                        };
 
-
-                    contadorB++;
+                        StoreDistribucionPlaza(distribucionPlaza);
+                        contador++;
+                    }
                 }
-                contadorA++;
             }
-
             return true;
         }
+
 
         private void StoreDistribucionPlaza(DistribucionPlaza distribucionPlaza)
         {
@@ -102,11 +101,15 @@ namespace ProyectoParkingServices.Services
             return true;
         }
 
-        public bool rellenarDistribucion(Int16 Id_Parking)
+        public bool rellenarDistribucion()
         {
+            var lastParking = _context.Parkings.OrderByDescending(p => p.Id).FirstOrDefault();
+            Int16 Id_Parking = lastParking.Id;
             leerFichero(Id_Parking);
             return true;
         }
+
+        
 
         public DistribucionPlazaDto PutDistribucionPlaza(int id, DistribucionPlazaDto distribucionPlazaDto)
         {
