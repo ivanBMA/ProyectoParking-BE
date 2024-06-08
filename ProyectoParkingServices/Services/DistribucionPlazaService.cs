@@ -17,37 +17,43 @@ namespace ProyectoParkingServices.Services
         private readonly ParkingContext _context;
         private readonly IMapper _mapper;
 
-        private Boolean leerFichero(Int16 Id_Parking)
+        private Boolean leerFichero(Int16 Id_Parking, Archivo? archivo)
         {
-            using (StreamReader reader = new StreamReader("C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\DistribucionA.json"))
-            {
-                string jsonString = reader.ReadToEnd();
-                Archivo matrizDatos = JsonConvert.DeserializeObject<Archivo>(jsonString);
-                Int16 contador = 1;
-
-                // Borrar la tabla antes de volcar los datos
-                // Código para borrar la tabla si es necesario
-
-                for (int contadorA = 0; contadorA < matrizDatos.Matriz.Length; contadorA++)
+            Archivo matrizDatos = null;
+                if (archivo == null)
                 {
-                    for (int contadorB = 0; contadorB < matrizDatos.Matriz[contadorA].Length; contadorB++)
-                    {
-                        Int16 Fila = (Int16)contadorA;
-                        Int16 Columna = (Int16)contadorB;
-                        bool EsPlaza = matrizDatos.Matriz[contadorA][contadorB];
-
-                        DistribucionPlaza distribucionPlaza = new DistribucionPlaza
-                        {
-                            //Id = contador,
-                            Fila = Fila,
-                            Columna = Columna,
-                            EsPlaza = EsPlaza,
-                            Id_Parking = Id_Parking
-                        };
-
-                        StoreDistribucionPlaza(distribucionPlaza);
-                        contador++;
+                    using (StreamReader reader = new StreamReader("C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\DistribucionA.json")) { 
+                        string jsonString = reader.ReadToEnd();
+                        matrizDatos = JsonConvert.DeserializeObject<Archivo>(jsonString);
                     }
+                }
+                else
+                {
+                    matrizDatos = archivo;
+                }
+                
+            
+            Int16 contador = 1;
+
+            for (int contadorA = 0; contadorA < matrizDatos.Matriz.Length; contadorA++)
+            {
+                for (int contadorB = 0; contadorB < matrizDatos.Matriz[contadorA].Length; contadorB++)
+                {
+                    Int16 Fila = (Int16)contadorA;
+                    Int16 Columna = (Int16)contadorB;
+                    bool EsPlaza = matrizDatos.Matriz[contadorA][contadorB];
+
+                    DistribucionPlaza distribucionPlaza = new DistribucionPlaza
+                    {
+                        //Id = contador,
+                        Fila = Fila,
+                        Columna = Columna,
+                        EsPlaza = EsPlaza,
+                        Id_Parking = Id_Parking
+                    };
+
+                    StoreDistribucionPlaza(distribucionPlaza);
+                    contador++;
                 }
             }
             return true;
@@ -70,6 +76,13 @@ namespace ProyectoParkingServices.Services
         public List<DistribucionPlazaDto> GetDistribucionPlazas()
         {
             var distribucionPlazas = _context.DistribucionPlazas.ToList();
+
+            return _mapper.Map<List<DistribucionPlazaDto>>(distribucionPlazas);
+        }
+
+        public List<DistribucionPlazaDto> GetDistribucionPlazasByParking(Int16 id)
+        {
+            var distribucionPlazas = _context.DistribucionPlazas.ToList().Where(c => c.Id_Parking == id);
 
             return _mapper.Map<List<DistribucionPlazaDto>>(distribucionPlazas);
         }
@@ -101,11 +114,11 @@ namespace ProyectoParkingServices.Services
             return true;
         }
 
-        public bool rellenarDistribucion()
+        public bool rellenarDistribucion(Archivo? archivo)
         {
             var lastParking = _context.Parkings.OrderByDescending(p => p.Id).FirstOrDefault();
             Int16 Id_Parking = lastParking.Id;
-            leerFichero(Id_Parking);
+            leerFichero(Id_Parking, archivo);
             return true;
         }
 

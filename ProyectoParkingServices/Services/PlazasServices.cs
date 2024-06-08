@@ -27,6 +27,13 @@ namespace ProyectoParkingServices.Services
 
             return _mapper.Map<List<PlazaDto>>(plazas);
         }
+        public List<PlazaDto> GetByParkingID(Int16 id)
+        {
+            var plazas = _context.Plazas.ToList().Where(c => c.Id_Parking == id);
+
+            return _mapper.Map<List<PlazaDto>>(plazas);
+        }
+        
 
         public PlazaDto StorePlaza(PlazaDto plazaDto)
         {

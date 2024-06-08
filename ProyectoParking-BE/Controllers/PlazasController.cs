@@ -23,6 +23,12 @@ namespace ProyectoParking_BE.Controllers
             return Ok(_plazaService.GetPlazas());
         }
 
+        [HttpGet("getAllPlazasByParking")]
+        public ActionResult<List<PlazaDto>> GetByParking(Int16 id)
+        {
+            return Ok(_plazaService.GetByParkingID(id));
+        }
+
         [HttpPost("postAddPlaza")]
         public ActionResult<PlazaDto> PostAddCar([FromBody] PlazaDto plazaDto)
         {

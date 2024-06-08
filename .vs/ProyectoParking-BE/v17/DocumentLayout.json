@@ -15,6 +15,34 @@
       "RelativeMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|solutionrelative:proyectoparkingservices\\services\\idistribucionplazaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparkingservices\\archivojson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|solutionrelative:proyectoparkingservices\\archivojson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparkingservices\\archivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|solutionrelative:proyectoparkingservices\\archivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparkingservices\\dto\\distribucionplazadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|solutionrelative:proyectoparkingservices\\dto\\distribucionplazadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparkingservices\\dto\\parkingsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|solutionrelative:proyectoparkingservices\\dto\\parkingsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparkingservices\\services\\plazasservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|solutionrelative:proyectoparkingservices\\services\\plazasservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparkingservices\\services\\iplazasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|solutionrelative:proyectoparkingservices\\services\\iplazasservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparking-be\\controllers\\plazascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E909551B-85AD-465F-BF5D-4633C2E2C06B}|ProyectoParking-BE\\ProyectoParking-BE.csproj|solutionrelative:proyectoparking-be\\controllers\\plazascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|c:\\users\\ivan\\source\\repos\\proyectoparking-be\\proyectoparkingservices\\services\\parkingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A531AD01-C968-4CD6-B123-C308AD9549EB}|ProyectoParkingServices\\ProyectoParkingServices.csproj|solutionrelative:proyectoparkingservices\\services\\parkingsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +74,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "ParkingsDto.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Dto\\ParkingsDto.cs",
+              "RelativeDocumentMoniker": "ProyectoParkingServices\\Dto\\ParkingsDto.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Dto\\ParkingsDto.cs",
+              "RelativeToolTip": "ProyectoParkingServices\\Dto\\ParkingsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T10:08:52.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DistribucionPlazaDto.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Dto\\DistribucionPlazaDto.cs",
+              "RelativeDocumentMoniker": "ProyectoParkingServices\\Dto\\DistribucionPlazaDto.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Dto\\DistribucionPlazaDto.cs",
+              "RelativeToolTip": "ProyectoParkingServices\\Dto\\DistribucionPlazaDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T07:36:24.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ParkingsController.cs",
               "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Controllers\\ParkingsController.cs",
               "RelativeDocumentMoniker": "ProyectoParking-BE\\Controllers\\ParkingsController.cs",
@@ -54,8 +106,19 @@
               "RelativeToolTip": "ProyectoParking-BE\\Controllers\\ParkingsController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T08:59:36.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T08:59:36.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ParkingsService.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\ParkingsService.cs",
+              "RelativeDocumentMoniker": "ProyectoParkingServices\\Services\\ParkingsService.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\ParkingsService.cs",
+              "RelativeToolTip": "ProyectoParkingServices\\Services\\ParkingsService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T08:57:52.435Z"
             },
             {
               "$type": "Document",
@@ -65,36 +128,9 @@
               "RelativeDocumentMoniker": "ProyectoParking-BE\\Controllers\\DistribucionPlazasController.cs",
               "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Controllers\\DistribucionPlazasController.cs",
               "RelativeToolTip": "ProyectoParking-BE\\Controllers\\DistribucionPlazasController.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwDEAAAAnAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAIwDoAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T09:28:11.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IDistribucionPlazaService.cs",
-              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\IDistribucionPlazaService.cs",
-              "RelativeDocumentMoniker": "ProyectoParkingServices\\Services\\IDistribucionPlazaService.cs",
-              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\IDistribucionPlazaService.cs",
-              "RelativeToolTip": "ProyectoParkingServices\\Services\\IDistribucionPlazaService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-23T09:27:55.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ParkingsService.cs",
-              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\ParkingsService.cs",
-              "RelativeDocumentMoniker": "ProyectoParkingServices\\Services\\ParkingsService.cs",
-              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\ParkingsService.cs",
-              "RelativeToolTip": "ProyectoParkingServices\\Services\\ParkingsService.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAowBkAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T08:57:52.435Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-23T09:28:11.434Z"
             },
             {
               "$type": "Document",
@@ -104,14 +140,50 @@
               "RelativeDocumentMoniker": "ProyectoParkingServices\\Services\\DistribucionPlazaService.cs",
               "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\DistribucionPlazaService.cs",
               "RelativeToolTip": "ProyectoParkingServices\\Services\\DistribucionPlazaService.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAmwCsAAAAuAAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAowB8AAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-23T08:24:50.45Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "Archivo.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Archivo.cs",
+              "RelativeDocumentMoniker": "ProyectoParkingServices\\Archivo.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Archivo.cs",
+              "RelativeToolTip": "ProyectoParkingServices\\Archivo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T17:00:13.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDistribucionPlazaService.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\IDistribucionPlazaService.cs",
+              "RelativeDocumentMoniker": "ProyectoParkingServices\\Services\\IDistribucionPlazaService.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\IDistribucionPlazaService.cs",
+              "RelativeToolTip": "ProyectoParkingServices\\Services\\IDistribucionPlazaService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T09:27:55.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArchivoJson.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\ArchivoJson.cs",
+              "RelativeDocumentMoniker": "ProyectoParkingServices\\ArchivoJson.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\ArchivoJson.cs",
+              "RelativeToolTip": "ProyectoParkingServices\\ArchivoJson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T17:03:43.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Program.cs",
               "RelativeDocumentMoniker": "ProyectoParking-BE\\Program.cs",
@@ -119,8 +191,43 @@
               "RelativeToolTip": "ProyectoParking-BE\\Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-22T08:35:31.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-22T08:35:31.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PlazasController.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Controllers\\PlazasController.cs",
+              "RelativeDocumentMoniker": "ProyectoParking-BE\\Controllers\\PlazasController.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParking-BE\\Controllers\\PlazasController.cs",
+              "RelativeToolTip": "ProyectoParking-BE\\Controllers\\PlazasController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T07:40:24.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IPlazasService.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\IPlazasService.cs",
+              "RelativeDocumentMoniker": "ProyectoParkingServices\\Services\\IPlazasService.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\IPlazasService.cs",
+              "RelativeToolTip": "ProyectoParkingServices\\Services\\IPlazasService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T07:41:37.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PlazasServices.cs",
+              "DocumentMoniker": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\PlazasServices.cs",
+              "RelativeDocumentMoniker": "ProyectoParkingServices\\Services\\PlazasServices.cs",
+              "ToolTip": "C:\\Users\\ivan\\source\\repos\\ProyectoParking-BE\\ProyectoParkingServices\\Services\\PlazasServices.cs",
+              "RelativeToolTip": "ProyectoParkingServices\\Services\\PlazasServices.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T07:43:19.286Z"
             }
           ]
         }

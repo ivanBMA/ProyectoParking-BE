@@ -23,6 +23,12 @@ namespace ProyectoParking_BE.Controllers
             return Ok(_distribucionPlazaService.GetDistribucionPlazas());
         }
 
+        [HttpGet("getAllDistribucionPlazasByParking")]
+        public ActionResult<List<DistribucionPlazaDto>> getAllDistribucionPlazasByParking(Int16 id)
+        {
+            return Ok(_distribucionPlazaService.GetDistribucionPlazasByParking(id));
+        }
+
         [HttpPost("postAddDistribucionPlaza")]
         public ActionResult<DistribucionPlazaDto> PostAddCar([FromBody] DistribucionPlazaDto distribucionPlazaDto)
         {
@@ -48,9 +54,9 @@ namespace ProyectoParking_BE.Controllers
         }
 
         [HttpPost("rellenarDistribucion")]
-        public ActionResult<List<DistribucionPlazaDto>> rellenarTabla()
+        public ActionResult<List<DistribucionPlazaDto>> rellenarTabla([FromBody] Archivo? archivo)
         {
-            return Ok(_distribucionPlazaService.rellenarDistribucion());
+            return Ok(_distribucionPlazaService.rellenarDistribucion(archivo));
         }
 
     }
