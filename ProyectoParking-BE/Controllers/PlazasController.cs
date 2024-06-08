@@ -41,7 +41,7 @@ namespace ProyectoParking_BE.Controllers
             return Ok(_plazaService.GetPlaza(id));
         }
 
-        [HttpPut("putPlaza")]
+        [HttpPut("putPlaza/{id}")]
         public ActionResult<List<PlazaDto>> PutPlaza(int id, [FromBody] PlazaDto plazaDto)
         {
             return Ok(_plazaService.PutPlaza(id, plazaDto));

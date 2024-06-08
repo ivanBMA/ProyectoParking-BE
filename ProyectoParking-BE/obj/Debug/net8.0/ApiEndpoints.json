@@ -823,7 +823,7 @@
   {
     "ContainingType": "ProyectoParking_BE.Controllers.PlazasController",
     "Method": "PutPlaza",
-    "RelativePath": "api/Plazas/putPlaza",
+    "RelativePath": "api/Plazas/putPlaza/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -831,7 +831,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "plazaDto",

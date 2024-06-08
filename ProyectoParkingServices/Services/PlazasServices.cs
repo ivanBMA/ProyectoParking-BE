@@ -69,22 +69,22 @@ namespace ProyectoParkingServices.Services
         {
             //var cocheAntiguo = _context.Cars.Where(c => c.Id == id).FirstOrDefault();
             //-> arreglar
-            var plazaAntiguo = _context.Plazas.AsNoTracking().FirstOrDefault(c => c.Id == id);
+            var plazaAntiguo = _context.Plazas.FirstOrDefault(c => c.Id == id);
 
-            plazaDto.Id = id;
+            //plazaDto.Id = id;
 
-            if (plazaDto.Ocupado == null)
-            {
-                plazaDto.Ocupado = plazaAntiguo.Ocupado;
-            }
+            //if (plazaDto.Ocupado == null)
+            //{
+            //    plazaDto.Ocupado = plazaAntiguo.Ocupado;
+            //}
            
 
-            var plaza = _mapper.Map<Plaza>(plazaDto);
+            plazaAntiguo.Ocupado = plazaDto.Ocupado;
 
-            _context.Plazas.Update(plaza);
+            _context.Plazas.Update(plazaAntiguo);
             _context.SaveChanges();
 
-            return _mapper.Map<PlazaDto>(plaza);
+            return _mapper.Map<PlazaDto>(plazaAntiguo);
         }
 
     }
